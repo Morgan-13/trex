@@ -1,0 +1,280 @@
+@charset "utf-8";
+
+/*
+	Operation Tyrannosaur Layout Styles
+	
+	Author:	Morgan Matchette
+	Date:	December 11, 2019
+	Filename:	ot_family.css
+
+*/
+
+/* HTML & Body Styles */
+html, body, header, img, p, section, ul, li, nav, footer {
+	background: transparent;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	background-image: url(dino-bg.png);
+	background-size: 500px 500px;
+	background-repeat: repeat;
+	background-color: rgb(200,200,200); /* Add bg color */
+	font-family: Calibri; /* < Add font */
+}
+
+body {
+	background-color: rgb(120,90,70);
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	border: 2px solid white;
+}
+
+/* Body Header Styles */
+body > header {
+	width: 100%;
+}
+
+body > header > img {
+	display: block;
+	width: 100%;
+}
+
+body > header > nav.horizontalNav li {
+	width: 20%;
+}
+
+/* Navigation Styles */
+nav.horizontalNav li {
+	display: block;
+	float: left;
+	font-size: 1.5em;
+}
+
+nav.horizontalNav a {
+	background-color: rgb(178,178,202);
+	font-size: 1.4 em;
+	line-height: 2.5em;
+	display: block;
+	text-align: center;
+	height: 60px;
+	text-decoration: none;
+}
+
+.horizontalNav li a:link, .horizontalNav li a:visited {
+	color: black;
+}
+
+.horizontalNav li a:hover {
+	color: yellow;
+	background: url(rex-silhouette.jpg) no-repeat;
+	background-position: center;
+	background-color: rgb(178,178,202);
+	width: 100%;
+}
+
+/* Article Styles */
+article {
+	border-radius: 30px;
+	background-color: white;
+	font-size: 1.2em;
+	line-height: 1.3em;
+}
+
+p {
+	margin: 10px;
+	padding: 5px;
+}
+
+article#intro {
+	text-align: center;
+	border: 1px solid black;
+	margin-top: 25px;
+	margin-left: 25px;
+	float: left;
+	padding-bottom: 20px;
+	padding: 10px;
+	width: 95%;
+}
+
+article#intro img{
+	width: 75%;
+	float: right;
+	border-radius: 30px;
+	margin: 0px 0px 0px 15px;
+	padding: 0px 0px 0px 15px;
+}
+
+/* Tyranno family table */
+table#family {
+	width: 80%;
+	padding: 15px;
+	margin: 50px 50px 50px 150px;
+	background-color: white;
+	border: 2px solid gray;
+	line-height: 25px; 
+	font-size: 20px;
+}
+
+table#family td, th {
+	border: 2px solid gray;
+}
+
+
+
+/* Tyranno family members */
+article#daspleto {
+	text-align: center;
+	border: 1px solid black;
+	margin-top: 25px;
+	margin-left: 25px;
+	float: left;
+	padding-bottom: 20px;
+	padding: 10px;
+	width: 90%;
+	/*border: 2px solid white;*/
+	border-radius: 30px;
+	background-color: white;
+}
+
+article#daspleto img {
+	width: 40%;
+	float: right;
+	padding: 10px;
+}
+
+
+article#bista {
+	text-align: center;
+	border: 1px solid black;
+	margin-top: 25px;
+	margin-left: 25px;
+	float: right;
+	padding-bottom: 20px;
+	padding: 10px;
+	width: 90%;
+}
+
+article#bista img {
+	width: 50%;
+	float: right;
+	padding: 10px;
+}
+
+article#lythronax {
+	text-align: center;
+	border: 1px solid black;
+	margin-top: 25px;
+	margin-left: 25px;
+	float: left;
+	padding-bottom: 20px;
+	padding: 10px;
+	width: 90%;
+}
+
+article#lythronax img {
+	width: 50%;
+	float: right;
+	padding: 10px;
+}
+
+article#tarbo {
+	text-align: center;
+	border: 1px solid black;
+	margin-top: 25px;
+	margin-left: 25px;
+	float: left;
+	padding-bottom: 20px;
+	padding: 10px;
+	width: 90%;
+}
+
+article#tarbo img {
+	width: 50%;
+	float: right;
+	padding: 10px;
+}
+
+
+/* Section Styles */
+section.tfam {
+	text-align: center;
+	border: 1px solid black;
+	margin: 20px auto auto auto;
+	padding: 25px;
+	float: left;
+	width: 100%;
+}
+
+/* Left-Hand Styles */
+section#leftColumn {
+	clear: left; 
+	float: left;
+	width: 40%;
+	padding: 1em;
+}
+
+
+/* Right-hand Styles */
+section#rightColumn {
+	float: left;
+	width: 60%;
+	padding: 0.5em;
+}
+
+
+/* Figure Box Styles */
+figure {
+	margin: 20px 0px 0px 90px;
+	padding: auto;
+	width: 80%;
+}
+
+section#leftColumn figure img {
+	display: block;
+	width: 100%;
+	margin: auto;
+}
+
+section#rightColumn figure img {
+	display: block;
+	width: 100%;
+}
+
+figure figcaption {
+	background-color: white;
+	font-style: italic;
+	padding: 10px 0;
+	text-align: center;
+	width: 100%;
+}	
+
+
+/* Footer Styles */
+footer {
+	height: 55px;
+	clear: left;
+	margin: 20px 0px 0px 0px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	background-color: rgb(178,178,202);
+}
+
+footer img {
+	margin: 10px 0px 5px 0px;
+}
+
+footer::after {
+	clear: both;
+	content: "";
+	display: table;
+
+}

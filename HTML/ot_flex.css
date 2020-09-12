@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+/*
+   Operation Tyrannosaur Flex Styles
+   
+   Author:   Morgan Matchette
+   Date:     December 11, 2019
+   
+   Filename: ot_flex.css
+   
+   This file contains the flex styles 
+   
+
+*/
+
+
+/* ================
+   Base Flex Styles
+   ================
+*/
+body {
+	display: -webkit-flex;
+	display: flex;
+	
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+header, footer {
+	width: 100%;
+}
+
+section#rightColumn {
+	-webkit-flex: 3 1 361px;
+	flex: 3 1 361px;
+}
+
+section#leftColumn {
+	-webkit-flex: 1 1 120px;
+	flex: 1 1 120px;
+}
+
+div[class^="col-"] {
+	-webkit-flex: 1 1 120px;
+	flex: 1 1 120px;
+}
+
+div h1, h2, p {
+	-webkit-flex: 3 1 361px;
+	flex: 3 1 361px;
+}
+
+div h1, h2, p img {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+div h1 {
+	-webkit-flex: 1 1 200px;
+	flex: 1 1 200px;
+}
+
+
+
+/* =========================
+   Mobile Styles: 0 to 480px 
+   =========================
+*/
+
+@media only screen and (max-width: 480px) {
+  
+	body {
+		width: 100%;
+	}
+  
+	header {
+		font-size: 1.0 em;
+		line-height: 1.8em;
+	}
+	
+	section#leftColumn {
+		font-size: 1.0em;
+		line-height: 1.6em;
+	}
+	
+
+  
+	/*body {
+		-webkit-order: 99;
+		order: 99;
+	}
+	
+	footer {
+		-webkit-order: 100;
+		order: 100;
+	}
+}
+
+	section#rightColumn {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row nowrap;
+		flex-flow: row nowrap;
+	}
+
+	section#leftColumn {
+		-webkit-flex: 1 1 auto;
+		flex: 1 1 auto;
+	}*/
+}
+
+/* ============================================
+   Tablet and Desktop Styles: 481px and greater 
+   ============================================
+*/
+
+@media only screen and (min-width: 481px) {
+
+	nav.horizontal ul {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row nowrap;
+		flex-flow: row nowrap;
+	}
+
+	nav.horizontal li {
+		-webkit-flex: 1 1 auto;
+		flex: 1 1 auto;
+	}
+}
+
+
+
+
+
+
+
+

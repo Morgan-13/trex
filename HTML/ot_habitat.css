@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+/*
+	Operation Tyrannosaur Layout Styles
+	
+	Author:	Morgan Matchette
+	Date:	December 12, 2019
+	Filename:	ot_styles.css
+
+*/
+
+/* HTML & Body Styles */
+html, body, header, img, p, section, ul, li, nav, footer {
+	background: transparent;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	background-image: url(dino-bg.png);
+	background-size: 500px 500px;
+	background-repeat: repeat;
+	background-color: rgb(200,200,200); /* Add bg color */
+	font-family: Calibri; /* < Add font */
+}
+
+body {
+	background-color: rgb(120,90,70);
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	border: 2px solid white;
+}
+
+/* Body Header Styles */
+body > header {
+	width: 100%;
+}
+
+body > header > img {
+	display: block;
+	width: 100%;
+}
+
+body > header > nav.horizontalNav li {
+	width: 20%;
+}
+
+/* Navigation Styles */
+nav.horizontalNav li {
+	display: block;
+	float: left;
+	font-size: 1.5em;
+}
+
+nav.horizontalNav a {
+	background-color: rgb(178,178,202);
+	font-size: 1.4 em;
+	line-height: 2.5em;
+	display: block;
+	text-align: center;
+	height: 60px;
+	text-decoration: none;
+}
+
+.horizontalNav li a:link, .horizontalNav li a:visited {
+	color: black;
+}
+
+.horizontalNav li a:hover {
+	color: yellow;
+	background: url(rex-silhouette.jpg) no-repeat;
+	background-position: center;
+	background-color: rgb(178,178,202);
+	width: 100%;
+}
+
+/* Section Styles */
+img#hellcreek {
+	width: 100%;
+	float: left;
+}
+
+article {
+	display: block;
+	width: 22%;
+	float: right;
+	margin: 15px;
+	padding: 15px;
+	background-color: white;
+	border-radius: 30px;
+	opacity: 80%;
+	position: absolute;
+	font-size: 15px;
+	line-height: 28px;
+}
+
+section > img#geo {
+	display: block;
+	position: absolute;
+	float: right;
+	right: 200px;
+	padding: 10px;
+	width: 32%;
+	border-radius: 50px;
+	opacity: 90%;
+}
+
+img#main {
+	width: 100%;
+}
+
+/* Figure map style */
+img#map {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	border: 80px solid white;
+}
+
+section#map {
+	background-color: white;
+	width: 100%;
+	float: left;
+	padding: 10px;
+	margin: 0px;
+	font-size: 15px;
+	line-height: 25px;
+	border-radius: 30px;
+	border: 5px dotted green;
+	text-align: center;
+}
+
+h2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+/* Left-Hand Styles */
+/*section#leftColumn {
+	clear: left; 
+	float: left;
+	font-size: 0.9em;
+	line-height: 1.6em;
+	width: 30%;
+	border: 2px solid white;
+	border-radius: 30px;
+	background-color: white;
+}
+
+section#leftColumn h1, p {
+	display: block;
+	padding: 10px 25px 10px 25px;
+	margin: 0px 5px 0px 5px;
+	
+}
+
+/* Right-hand Styles */
+/*section#rightColumn {
+	float: left;
+	width: 70%;
+}
+
+section#rightColumn img {
+	width: 100%;
+}
+
+
+/* Footer Styles */
+footer {
+	height: 55px;
+	clear: left;
+	margin: 20px 0px 0px 0px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	background-color: rgb(178,178,202);
+}
+
+footer img {
+	margin: 10px 0px 5px 0px;
+}
+
+footer::after {
+	clear: both;
+	content: "";
+	display: table;
+}

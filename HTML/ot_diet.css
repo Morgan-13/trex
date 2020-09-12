@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+/*
+	Operation Tyrannosaur Diet Layout Styles
+	
+	Author:	Morgan Matchette
+	Date:	December 11, 2019
+	Filename:	ot_diet.css
+
+*/
+
+/* HTML & Body Styles */
+html, body, header, img, p, section, ul, li, nav, footer {
+	background: transparent;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	background-image: url(dino-bg.png);
+	background-size: 500px 500px;
+	background-repeat: repeat;
+	background-color: rgb(200,200,200); /* Add bg color */
+	font-family: Calibri; /* < Add font */
+}
+
+body {
+	background-color: rgb(120,90,70);
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	border: 2px solid white;
+}
+
+/* Body Header Styles */
+body > header {
+	width: 100%;
+}
+
+body > header > img {
+	display: block;
+	width: 100%;
+}
+
+body > header > nav.horizontalNav li {
+	width: 20%;
+}
+
+/* Navigation Styles */
+nav.horizontalNav li {
+	display: block;
+	float: left;
+	font-size: 1.5em;
+}
+
+nav.horizontalNav a {
+	background-color: rgb(178,178,202);
+	font-size: 1.4 em;
+	line-height: 2.5em;
+	display: block;
+	text-align: center;
+	height: 60px;
+	text-decoration: none;
+}
+
+.horizontalNav li a:link, .horizontalNav li a:visited {
+	color: black;
+}
+
+.horizontalNav li a:hover {
+	color: yellow;
+	background: url(rex-silhouette.jpg) no-repeat;
+	background-position: center;
+	background-color: rgb(178,178,202);
+	width: 100%;
+}
+
+/* intro */
+section#first img {
+	width: 70%;
+	float: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+section#first article { 
+	font-size: 1.0em;
+	line-height: 1.4em;
+	width: 27%;
+	border: 2px solid white;
+	border-radius: 30px;
+	background-color: white;
+	padding: 10px;
+	margin: 0px;
+	text-align: center;
+}
+
+/* Vision */
+
+section#second {
+	width: calc(100% - 20px);
+	margin: 0px;
+}
+
+section#second article {
+	width: 100%;
+	text-align: center;
+	font-size: 1.0em;
+	line-height: 1.4em;
+	background-color: white;
+	margin: 0px;
+	padding: 10px;
+}
+
+img#flair {
+	width: 70%;
+}
+ 
+img#face {
+	float: right;
+}
+
+/* Jaws */
+section#third {
+	width: calc(100% - 20px);
+}
+
+section#third article {
+	width: 100%;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	background-color: white;
+	margin: 0px;
+	padding: 10px;
+	text-align: center;
+}
+
+img#facialmuscles {
+	width: 50%;
+	float: left;
+	margin: 10px;
+	padding: 10px;
+}
+
+section#vid{
+	float: right;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Speed */ 
+section#fourth {
+	width: 100%;
+	float: left;
+}
+
+section#fourth article {
+	width: 60%;
+	float: left;
+	font-size: 1.2em;
+	line-height: 1.8em;
+	background-color: rgba(255,255,255, 0.8);
+	color: black;
+	margin: 5px 10px 15px 5px;
+	padding: 20px 5px 35px 5px;
+	text-align: center;
+}
+
+section#fourth p, h1 {
+	width: 50%;
+	padding: 10px 5px 10px 5px;
+	margin: 10px 10px 10px 5px;
+}	
+
+img#animal-run {
+	width: 100%;
+}
+
+img#chicken {
+	width: 35%;
+	padding: 10px 0px 20px 0px;
+	margin: 10px 10px 20px 10px;
+	background-color: white;
+}
+
+img#rexrun {
+	width: 50%;
+	float: right;
+	padding: 10px 10px 20px 0px;
+	margin: 20px 10px 20px 20px;
+}
+
+/* Footer Styles */
+footer {
+	height: 55px;
+	clear: left;
+	margin: 20px 0px 0px 0px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	background-color: rgb(178,178,202);
+}
+
+footer img {
+	margin: 10px 0px 5px 0px;
+}
+
+footer::after {
+	clear: both;
+	content: "";
+	display: table;
+
+}
+

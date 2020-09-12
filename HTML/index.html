@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--
+	Operation Tyrannosaur 
+	Author: Morgan Matchette
+	Date:	December 8, 2019
+	Filename: ot_home.html
+
+	-->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Tyrannosaurs</title>
+	<link href="ot_styles.css" rel="stylesheet" />
+	<link href="ot_flex.css" rel="stylesheet" />
+</head>
+
+<body>
+	<header><img src="trexskeleton.jpg" alt="trex skull" />
+		<nav class="horizontalNav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="ot_habitat.html">Habitat</a></li>
+				<li><a href="ot_diet.html">Diet</a></li>
+				<li><a href="ot_family.html">Family</a></li>
+				<li><a href="ot_more.html">More</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<section id="leftColumn">
+		<h1>Tyrannosaurus</h1>
+		
+		<p>Most people know of the mighty Tyrannosaurus Rex from movies like Jurassic Park but how much do we really know about these now extinct animals?
+		</p>
+		<p>The name Tyrannosaurus, meaning "Tyrant Lizard", actually refers to the family Tyrannosauridae which includes many different species of carnivorous dinosaurs which share characteristics. The largest and most famous of these is the Tyrant King Tyrannosaurus Rex.</p>
+		<p>Often called T. Rex for short, these massive creatures were about 40 feet long and stood approximately 15 feet high. Their disproportionately large head was filled with banana-sized teeth for crushing bone. To balance such a heavy skull, T. Rex had huge hips and powerful legs, as well a tail that weighed a ton.
+		</p>
+	</section>
+	
+	<section id="rightColumn">
+		<img src="trex_landscape.png" alt="trex walking" />
+	</section>
+	
+	<img id="sue" src="sue-reconstruction.png" alt="" />
+	
+	<section id="anatomy">
+	<h1>Anatomy of a King</h1>
+
+	<p>By attemping to reconstruct the muscle attachments of long dead animals, we can better understand how they functioned.</p>
+
+	<p>Click on the buttons to view T. Rex muscles!</p>
+
+	<img id="tAnatomy" src="saurian-skeleton.jpg" style="width:1000px">
+
+	<button id="muscle" onclick="document.getElementById('tAnatomy').src='saurian-muscles.jpg'">Muscles</button>
+
+
+	<button id="bone" onclick="document.getElementById('tAnatomy').src='saurian-skeleton.jpg'">Skeleton</button>
+	</section>
+
+</body>
+
+<footer>
+	<address>
+      Tyrannosaurus Rex &#8226; <email>Trex@yahoo.com</email> &#8226; 512.555.5555 &#8226 <a href="https://www.facebook.com/"><img src="fblogo.png" alt="fb logo" /></a> &#8226 <a href="https://twitter.com/?lang=en"><img src="twitterlogo.png" alt="twitter logo" /></a> &#8226 <button onclick="this.innerHTML=Date()">Click here for today's date and time</button>
+    </address>
+</footer>
+
+</html>
